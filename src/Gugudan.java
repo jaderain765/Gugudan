@@ -59,18 +59,45 @@ public class Gugudan {
 //		System.out.println(number+"*7="+number*7);
 //		System.out.println(number+"*8="+number*8);
 //		System.out.println(number+"*9="+number*9);
+//		
+//		int i=1;
+//		while (i < 10) {
+//            // 곱셈 결과 출력
+//        	System.out.println(6+"*"+i+"="+6*i);
+//            // i 값을 1 증가
+//        	i+=1;
+//        }
+//		
+//		for(int j =1; j<100;j++) {
+//			System.out.println(7+"*"+j+"="+7*j);
+//		}
 		
-		int i=1;
-		while (i < 10) {
-            // 곱셈 결과 출력
-        	System.out.println(6+"*"+i+"="+6*i);
-            // i 값을 1 증가
-        	i+=1;
-        }
+		//if 문
 		
-		for(int j =1; j<100;j++) {
-			System.out.println(7+"*"+j+"="+7*j);
+		System.out.println("출력할 구구단을 말해주세요:");
+		Scanner scanner = new Scanner(System.in);
+		int number = scanner.nextInt();
+		System.out.println("사용자가 입력한값: "+number);
+		
+		if (number < 2) {
+			System.out.println("Error : number is too small");
+		} else if (number > 9) {
+			System.out.println("Error : number is too big");
+		} else {
+			for (int i =1; i<10; i++) {
+				System.out.println(number * i);
+			}
 		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
